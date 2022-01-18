@@ -1,5 +1,10 @@
+*{
+  font-family: sans-serif;
+}
+
 html, body, #home{
   height: 100%;
+  overflow-x: hidden; /*Hides horizontal bar*/
 }
 
 body{
@@ -36,9 +41,152 @@ nav.navbar-transparent{
 .cover{
   text-align: center;
 }
+
+
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: all 0.4s, color 0.4s;
+  padding: 10px 20px;
+}
+
+.btn-purple{
+  background: #7c25f8;
+}
+.btn-purple:hover{
+  background: #4d07b1;
+  color: white;
+}
+.btn-white{
+  border: 2px solid white;
+}
+.btn-white:hover{
+  color: black;
+  background: white;
+}
+
+
+.box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#services{
+  background: white;
+}
+#services h2, h3{
+  color: #7c25f8;
+}
+
+#resources{
+  color: white;
+}
+#resources h2{
+  color: white;
+}
+#resources h3{
+  color: #9bf0e1;
+}
+
+
+
+
+
+
+.album{
+  padding: 10px 0;
+}
+.rotate{
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  padding-left: 80px;
+}
+
+footer{
+  background: black;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+footer h4{
+  color: #919496;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+footer .navbar-nav a{
+  color: white;
+  font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+  color: #9bf0e1;
+  text-decoration: none;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+  float: right;
+  margin: 0 10px;
+  width: 21%;
+}
+
+
+
+
+
 h1{
   font-weight: 900;
   letter-spacing: -0.05em;
   margin-bottom: 50px;
   color: white;
+}
+
+h2{
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+h3{
+  font-size: em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/ 
+@media (max-width: 575.98px) {
+  .main-title{
+    font-size: 5em;
+  }
+  .btn-custom{
+    margin: 10px 15px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-title{
+    font-size: 5em;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-title{
+    font-size: 6em;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-title{
+    font-size: 7em;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media (min-width: 1200px) {
+  .main-title{
+    font-size: 8em;
+  }
 }
